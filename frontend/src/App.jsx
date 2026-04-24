@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  const serverUrl = "http://localhost:3000";
+  const serverUrl = "https://folder-hu-yr.vercel.app";
   const [data, setData] = useState(null);
 
   const fetchData = async () => {
@@ -31,7 +31,7 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>{data?.message || "Hello Vite + React!"}</h1>
+          <h1>{data?.message || "Loading Data...."}</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
